@@ -1,0 +1,1394 @@
+<style>pre {white-space: pre-wrap;}</style>
+-----------------------------------------------------------------------------------<br>
+Post ID:19715<br>
+Sender:mike amundsen &lt;mamund@...&gt;<br>
+Post Date/Time:2015-03-02 17:41:49<br>
+Subject:Fwd: New Version Notification for draft-amundsen-richardson-foster-alps-01.txt<br>
+Message:<br><br>
+<pre>The updated I-D for ALPS was just posted it to the IETF tracker (see
+details below). I've also updated the web site[0] .
+
+We're looking for any/all comments and feedback. Feel free to discuss on
+the ALPS list[1] or here, and to open/update issues in github[2] for the
+next round of changes.
+
+-- cheers.
+
+[0]  http://alps.io/spec/index.html
+[1] https://groups.google.com/forum/?fromgroups=#!forum/alps-io
+[2] https://github.com/alps-io/spec/issues
+
+
+mamund
++1.859.757.1449
+skype: mca.amundsen
+http://amundsen.com/blog/
+http://twitter.com/mamund
+https://github.com/mamund
+http://linkedin.com/in/mamund
+
+
+
+---------- Forwarded message ----------
+From: &lt;internet-drafts@...&gt;
+Date: Mon, Mar 2, 2015 at 12:23 PM
+Subject: New Version Notification for
+draft-amundsen-richardson-foster-alps-01.txt
+To: Mike Amundsen &lt;mca@...&gt;, Leonard Richardson &lt;
+leonardr@...&gt;, "Mark W. Foster" &lt;mwf@...&gt;
+
+
+
+A new version of I-D, draft-amundsen-richardson-foster-alps-01.txt
+has been successfully submitted by Mike Amundsen and posted to the
+IETF repository.
+
+Name:           draft-amundsen-richardson-foster-alps
+Revision:       01
+Title:          Application-Level Profile Semantics (ALPS)
+Document date:  2015-02-28
+Group:          Individual Submission
+Pages:          27
+URL:
+http://www.ietf.org/internet-drafts/draft-amundsen-richardson-foster-alps-01.txt
+Status:
+https://datatracker.ietf.org/doc/draft-amundsen-richardson-foster-alps/
+Htmlized:
+http://tools.ietf.org/html/draft-amundsen-richardson-foster-alps-01
+Diff:
+http://www.ietf.org/rfcdiff?url2=draft-amundsen-richardson-foster-alps-01
+
+Abstract:
+   This document describes ALPS, a data format for defining simple
+   descriptions of application-level semantics, similar in complexity to
+   HTML microformats.  An ALPS document can be used as a profile to
+   explain the application semantics of a document with an application-
+   agnostic media type (such as HTML, HAL, Collection+JSON, Siren,
+   etc.).  This increases the reusability of profile documents across
+   media types.
+
+Editorial Note (To be removed by RFC Editor)
+
+   Distribution of this document is unlimited.  Comments should be sent
+   to the IETF Media-Types mailing list (see [1]).
+
+
+
+
+Please note that it may take a couple of minutes from the time of submission
+until the htmlized version and diff are available at tools.ietf.org.
+
+The IETF Secretariat
+</pre><br><br><br><br><br>
+-----------------------------------------------------------------------------------<br>
+Post ID:19716<br>
+Sender:kalguni@...<br>
+Post Date/Time:2015-06-16 23:29:34<br>
+Subject:URI construction for REST API and use of verbs as resource?<br>
+Message:<br><br>
+<pre>Dear all,
+ I have two questions.
+ 1) I have a issue of understanding the correct URL construction for a REST API. For example,
+ https://api.context.io/lite/users/id/email_accounts/label/folders/folder/messages/message_id
+ Here as you can see the folder comes under folders resource and message_id comes under messages. Is it necessary to show the parent resource or collection. Will it be wrong to have a URL such as this?
+ https://api.context.io/lite/userid/folderid/message_id
+ Here, the userid, folderid and message_id maybe would indicate as integers or some other value. Of course with the values the URL doesn't make sense, but does it matter in m2m transaction? What is the best way to construct the URL?
+ 2) Is it ok to have 'verbs' in the URL? I have seen the following urls which has verbs such as 'move', 'send' in the URL. Is that correct? If it is wrong, should we do everything such as 'search' using parameters only?
+ POST https://outlook.office365.com/api/v1.0/me/messages/{message_id}/move
+POST https://www.googleapis.com/gmail/v1/users/userId/messages/send
+ Please share your thoughts. I read lots of articles on these. Yet it seems to be more of a personal choice rather than an Industry standard. 
+
+ Thanks in advance.
+ 
+
+</pre><br><br><br><br><br>
+-----------------------------------------------------------------------------------<br>
+Post ID:19717<br>
+Sender:Aristotle Pagaltzis &lt;pagaltzis@...&gt;<br>
+Post Date/Time:2015-06-17 09:02:08<br>
+Subject:Re: URI construction for REST API and use of verbs as resource?<br>
+Message:<br><br>
+<pre>* kalguni@... [rest-discuss] &lt;rest-discuss-noreply@yahoogroups.com&gt; [2015-06-17 03:40]:
+&gt; I read lots of articles on these. Yet it seems to be more of
+&gt; a personal choice rather than an Industry standard.
+
+It is personal choice. As far as REST is concerned, you can use GUIDs
+as your URLs for all the difference it makes. Of course, in practice
+“REST API” is code for “HTTP/RPC hybrid” and not at all a hypermedia-
+driven design, but even so, it’s up to you. It’s essentially similar
+to naming functions or methods – there *is* bad design and bad ideas,
+but there is no correctness criterion. (Or like CSS class names, come
+to think of it.)
+
+Regards,
+-- 
+Aristotle Pagaltzis // &lt;http://plasmasturm.org/&gt;
+
+</pre><br><br><br><br><br>
+-----------------------------------------------------------------------------------<br>
+Post ID:19718<br>
+Sender:Erik Wilde &lt;dret@...&gt;<br>
+Post Date/Time:2015-06-17 09:50:42<br>
+Subject:Re: [rest-discuss] Re: URI construction for REST API and use of verbs as resource?<br>
+Message:<br><br>
+<pre>hello.
+
+&gt; On Jun 17, 2015, at 11:02, Aristotle Pagaltzis pagaltzis@... [rest-discuss] &lt;rest-discuss-noreply@yahoogroups.com&gt; wrote:
+&gt; * kalguni@yahoo.com [rest-discuss] &lt;rest-discuss-noreply@yahoogroups.com&gt; [2015-06-17 03:40]:
+&gt;&gt; I read lots of articles on these. Yet it seems to be more of
+&gt;&gt; a personal choice rather than an Industry standard.
+&gt; It is personal choice. As far as REST is concerned, you can use GUIDs
+&gt; as your URLs for all the difference it makes. Of course, in practice
+&gt; “REST API” is code for “HTTP/RPC hybrid” and not at all a hypermedia-
+&gt; driven design, but even so, it’s up to you. It’s essentially similar
+&gt; to naming functions or methods – there *is* bad design and bad ideas,
+&gt; but there is no correctness criterion.
+
+only because it's misused and misinterpreted in many places doesn't mean it isn't well-defined, or that you cannot do it right or do it wrong. many REST labels are simply wrongly assigned for marketing reasons, but at least on this list we should know better and not tell people that it's essentially meaningless. it's not, and getting it right or not makes a difference in practice.
+
+cheers,
+
+dret.
+</pre><br><br><br><br><br>
+-----------------------------------------------------------------------------------<br>
+Post ID:19719<br>
+Sender:Aristotle Pagaltzis &lt;pagaltzis@...&gt;<br>
+Post Date/Time:2015-06-17 11:49:57<br>
+Subject:Re: URI construction for REST API and use of verbs as resource?<br>
+Message:<br><br>
+<pre>* Erik Wilde &lt;dret@...&gt; [2015-06-17 11:55]:
+&gt; &gt; On Jun 17, 2015, at 11:02, Aristotle Pagaltzis pagaltzis@... wrote:
+&gt; &gt; * kalguni@... [2015-06-17 03:40]:
+&gt; &gt; &gt; I read lots of articles on these. Yet it seems to be more of
+&gt; &gt; &gt; a personal choice rather than an Industry standard.
+&gt; &gt;
+&gt; &gt; It is personal choice. As far as REST is concerned, you can use
+&gt; &gt; GUIDs as your URLs for all the difference it makes. Of course, in
+&gt; &gt; practice “REST API” is code for “HTTP/RPC hybrid” and not at all
+&gt; &gt; a hypermedia- driven design, but even so, it’s up to you. It’s
+&gt; &gt; essentially similar to naming functions or methods – there *is* bad
+&gt; &gt; design and bad ideas, but there is no correctness criterion.
+&gt;
+&gt; only because it's misused and misinterpreted in many places doesn't
+&gt; mean it isn't well-defined, or that you cannot do it right or do it
+&gt; wrong. many REST labels are simply wrongly assigned for marketing
+&gt; reasons, but at least on this list we should know better and not tell
+&gt; people that it's essentially meaningless. it's not, and getting it
+&gt; right or not makes a difference in practice.
+
+Only because it’s misused and misinterpreted everywhere doesn’t mean
+that’s not worth stating. You can do it well or badly but not right or
+wrong. On this list we should know better than to confuse “meaningless
+to the client in a hypermedia design” with “meaningless in its essence”.
+And unless you also thought I was championing the use of GUIDs as method
+names I don’t know why after I said it’s akin to naming your methods or
+your CSS classes you would think I was saying it makes no difference in
+practice.
+
+Regards,
+-- 
+Aristotle Pagaltzis // &lt;http://plasmasturm.org/&gt;
+
+</pre><br><br><br><br><br>
+-----------------------------------------------------------------------------------<br>
+Post ID:19720<br>
+Sender:Vinod Kumar Gupta &lt;vkg.mca@...&gt;<br>
+Post Date/Time:2015-06-17 10:39:49<br>
+Subject:Re: [rest-discuss] URI construction for REST API and use of verbs as resource?<br>
+Message:<br><br>
+<pre>Dear kalguni
+
+
+1. The rest principle suggest you to follow the first approach.  Since your
+resource hierarchy in such away it creates long url but it is the right way
+2. Using verbs is not a good choice,  always prefer nouns only.
+
+
+It's my way of working based on the learning I had so far
+
+
+Regards
+Vinod
+ On 17-Jun-2015 9:36 am, "kalguni@... [rest-discuss]" &lt;
+rest-discuss-noreply@yahoogroups.com&gt; wrote:
+
+
+&gt;
+&gt;
+&gt; Dear all,
+&gt;
+&gt; I have two questions.
+&gt;
+&gt; 1) I have a issue of understanding the correct URL construction for a REST
+&gt; API. For example,
+&gt;
+&gt; https://api.context.io/lite/users/id/email_accounts/label/folders/folder/messages/message_id
+&gt;
+&gt; Here as you can see the folder comes under folders resource and message_id
+&gt; comes under messages. Is it necessary to show the parent resource or
+&gt; collection. Will it be wrong to have a URL such as this?
+&gt;
+&gt; https://api.context.io/lite/userid/folderid/message_id
+&gt;
+&gt; Here, the userid, folderid and message_id maybe would indicate as integers
+&gt; or some other value. Of course with the values the URL doesn't make sense,
+&gt; but does it matter in m2m transaction? What is the best way to construct
+&gt; the URL?
+&gt;
+&gt; 2) Is it ok to have 'verbs' in the URL? I have seen the following urls
+&gt; which has verbs such as 'move', 'send' in the URL. Is that correct? If it
+&gt; is wrong, should we do everything such as 'search' using parameters only?
+&gt;
+&gt; POST https://outlook.office365.com/api/v1.0/me/messages/{message_id}/move
+&gt; POST https://www.googleapis.com/gmail/v1/users/userId/messages/send
+&gt;
+&gt; Please share your thoughts. I read lots of articles on these. Yet it seems
+&gt; to be more of a personal choice rather than an Industry standard.
+&gt;
+&gt; Thanks in advance.
+&gt;
+&gt;
+&gt;
+&gt;
+</pre><br><br><br><br><br>
+-----------------------------------------------------------------------------------<br>
+Post ID:19721<br>
+Sender:Jeff Lowe &lt;jlowe@...&gt;<br>
+Post Date/Time:2015-06-17 13:52:20<br>
+Subject:RE: [rest-discuss] URI construction for REST API and use of verbs as resource?<br>
+Message:<br><br>
+<pre>&gt;&gt; 2) Is it ok to have 'verbs' in the URL? I have seen the following urls which has verbs such as 'move', 'send' in the URL. Is that correct? If it is wrong, should we do everything such as 'search' using parameters only?
+
+I struggled with this for a while for a particular use case. My API needed to support the releasing of a customer-order to manufacturing. That suggested the URL ../orders/{id}/release.
+
+However I was entertaining that “verbs are RPC and resources are REST”, and “release” is obviously a verb. I entertained a few different approaches:
+
+1.      PUT an order resource and set the “state” to released. That didn’t seem right because “release” is more of a business process than a property on a resource. In addition I’d be exposing internal state that shouldn’t necessarily be exposed.
+
+2.      POST to an order-releaser resource. That’s more restful, but seems artificial.
+
+I started considering that REST was just not the right pattern for my purpose. Then I read “RESTful Web Services Cookbook”. It presented the concept of “controller as a resource”. With that in mind I went back to POST /orders/{id}/release, with the understanding that the API consumer was posting a request to the order-release controller (a resource). That worked for me.
+
+-Jeff
+
+
+
+From: rest-discuss@yahoogroups.com [mailto:rest-discuss@yahoogroups.com] On Behalf Of kalguni@yahoo.com [rest-discuss]
+Sent: Tuesday, June 16, 2015 7:30 PM
+To: rest-discuss@yahoogroups.com
+Subject: [rest-discuss] URI construction for REST API and use of verbs as resource?
+
+
+
+Dear all,
+
+I have two questions.
+
+1) I have a issue of understanding the correct URL construction for a REST API. For example,
+
+https://api.context.io/lite/users/id/email_accounts/label/folders/folder/messages/message_id&lt;https://api.context.io/lite/users/id/email_accounts/label/folders/folder/messages/message_id&gt;
+
+Here as you can see the folder comes under folders resource and message_id comes under messages. Is it necessary to show the parent resource or collection. Will it be wrong to have a URL such as this?
+
+https://api.context.io/lite/userid/folderid/message_id&lt;https://api.context.io/lite/userid/folderid/message_id&gt;
+
+Here, the userid, folderid and message_id maybe would indicate as integers or some other value. Of course with the values the URL doesn't make sense, but does it matter in m2m transaction? What is the best way to construct the URL?
+
+2) Is it ok to have 'verbs' in the URL? I have seen the following urls which has verbs such as 'move', 'send' in the URL. Is that correct? If it is wrong, should we do everything such as 'search' using parameters only?
+
+POST https://outlook.office365.com/api/v1.0/me/messages/{message_id}/move&lt;https://outlook.office365.com/api/v1.0/me/messages/%7bmessage_id%7d/move&gt;
+
+POST https://www.googleapis.com/gmail/v1/users/userId/messages/send&lt;https://www.googleapis.com/gmail/v1/users/userId/messages/send&gt;
+
+Please share your thoughts. I read lots of articles on these. Yet it seems to be more of a personal choice rather than an Industry standard.
+
+Thanks in advance.
+
+
+
+</pre><br><br><br><br><br>
+-----------------------------------------------------------------------------------<br>
+Post ID:19722<br>
+Sender:Kalana Guniyangoda &lt;kalguni@...&gt;<br>
+Post Date/Time:2015-06-19 21:40:03<br>
+Subject:RE: [rest-discuss] URI construction for REST API and use of verbs as resource?<br>
+Message:<br><br>
+<pre>Thank you very much for the responses Aristotle, Erik, Vinod and Jeff
+
+
+ I think the answer for first question is clear that it is better to use URL's which give us a meaningful URL even thought it is long.
+
+
+ For the second question, "controller as a resource" seems to be a good option. But still I feel like it is a scapegoat version for including verbs in the URL. Maybe I need to read more on that.
+
+
+Thanks again.
+</pre><br><br><br><br><br>
+-----------------------------------------------------------------------------------<br>
+Post ID:19723<br>
+Sender:Kalana Guniyangoda &lt;kalguni@...&gt;<br>
+Post Date/Time:2015-06-24 14:38:43<br>
+Subject:Fw: [rest-discuss] URI construction for REST API and use of verbs as resource?<br>
+Message:<br><br>
+<pre>
+
+
+
+
+
+On Wed, Jun 24, 2015 at 2:09 PM, Kalana Guniyangoda &lt;kalguni@...m&gt; wrote:
+
+
+Hi Jørn, Thank you very much for the response. It looks like I have thought given more attention to HTTP request methods than representing things as resources. For example I have tried to do lots of things using a PUT or PATCH while I should have identified each as individual resource instead.
+
+
+I should definitely think of using a hyper media format which would ease my work on constructing my responses.
+
+
+Thank a lot for the clear examples and response Jørn. I realized that we are doing this discussion off the list. Shall I send a copy to the list since, I believe your examples and suggestions would help lot of other guys too.
+Thank you very much.
+
+
+
+
+     On Wednesday, June 24, 2015 2:00 PM, Jørn Wildt &lt;jw@fjeldgruppen.dk&gt; wrote:
+
+
+
+ &gt; 1) What kind of HTTP request method you are using for /requsitions/{id}/accept, /requsitions/{id}/cancel
+
+
+That would be POST for executing the actual operation. A GET returns a human readable description of the resource (could also include an HTML form to allow developers to try it out directly).
+
+
+&gt; Would be restful if we put "accepted", "canceled", "assessed" and "completed" as flags on requisition resource and then used PUT or PATCH method to update that flag.
+
+
+You could also do that and PATCH those boolean flags. But then it would be weird to include other values too (like for instance a time stamp, a reason and similar stuff that is somehow related to the operation). PUT is difficult as it was never designed for partial updates (but this is debated among the experts ...) - but it would work too. None of it can be said to be "RESTful" or not - REST is an architectural style whereas the inner workings of PUT/POST/PATCH is more related to the HTTP specification.
+
+
+&gt; if we use parameters such as "?search=" or "?filter=", the client can't discover it right?
+
+
+Well, it depends ... remember to distinguish between the "client" and what/who is driving the client. The client can discover, at runtime, how to construct the URL given that it knows it will contain a parameter named "search". This can be done with URL templates. But a human driving the client would have to understand the search expression format. If a scripted program was driving the client then that program/script would have to understand the format too. But the client itself - the code that understand the message format - can discover how to construct a URL with the "search" parameter in it.
+
+
+URL templates are supported in some of the hypermedia formats out there (look for HAL, Mason, Siren, Collections-JSON for more info). Mason for instance uses @controls to represent embedded hypermedia controls. A "search" URL template could be represented like this:
+
+
+{
+  Description: "This is a collection of items",
+  @controls:
+  {
+    search:
+    {
+      href: "http://myapi.com/items-search{?search}",
+      isHrefTemplate: true,
+      method: "GET",
+      title: "This is a URL template for searching for other items in the collection"
+    }
+  }
+}
+
+
+
+
+On Tue, Jun 23, 2015 at 6:06 PM, Kalana Guniyangoda &lt;kalguni@...&gt; wrote:
+
+
+Hi Jørn,
+Thank you very much for the explanations and examples. I also read your blog-post on url structure and it was very informative. If you don't mind I have few more questions.
+
+
+1) What kind of HTTP request method you are using for  /requsitions/{id}/accept, /requsitions/{id}/cancel
+
+
+2) Would be restful if we put "accepted", "canceled", "assessed" and "completed" as flags on requisition resource and then used PUT or PATCH method to update that flag. After reading the blog, I started to think more on client coupling to the API just because of the use of API specific URL's or parameters. Even in this case, if we use flags, the client has to know it before. Or is it possible to let them know it via hypertext in the resource itself? if yes, what kind of a formatting you suggest?
+3) I'm kinda stuck with search and filtering operations for a collection. Paging of course could be done for a collection using GET parameters and then URL's for next and previous pages could be included in the resource itself. However for search and filtering, if we use parameters such as "?search=" or "?filter=", the client can't discover it right? And that would leads to tight coupling between server and client.
+Is it possible to include those parameters in the resource itself? if yet, what would be the best way? what type of link relations you may use?
+Again.. Thanks for your advices and suggestions..
+
+
+
+
+
+
+     On Monday, June 22, 2015 12:47 PM, Jørn Wildt &lt;jw@...&gt; wrote:
+
+
+
+ &gt; For the second question, "controller as a resource" seems to be a good option. But still I feel like it is a scapegoat version for including verbs in the URL. Maybe I need to read more on that.My experience is that you can get a long way by restricting yourself to nouns only - and invent new nouns instead of adding verbs. But sometimes it gets a bit tricky: in my current work we are representing "requisitions" via an API (a requisition is a request for some work to be done). Such a requisition can be manipulated in many different ways - it can be "accepted" by the receiver, it can be "canceled" by the sender, it can be "assessed" by the receiver, "updated" by the sender and eventually "completed" by the receiver.We ended up using "controller" resources for each of these operations - and together with embedded hypermedia links in the requisition representation it works very well.The requisition itself is at /requsitions/{id} and each of the operations are at /requsitions/{id}/accept, /requsitions/{id}/cancel and so on. Not that the actual URLs matter at all to the client since we include them in the requisition representation itself. Something like this:{
+  Id: 1234,
+  Description: "Blah ...",
+  Deadline: "2015-06-25 12:00:00",
+  Links:
+  {
+    accept: "... full path to accept controller",
+    cancel: "... full path to cancel controller",
+  }
+}/Jørn
+     Thank you very much for the responses Aristotle, Erik, Vinod and Jeff
+
+
+ I think the answer for first question is clear that it is better to use URL's which give us a meaningful URL even thought it is long.
+
+
+ For the second question, "controller as a resource" seems to be a good option. But still I feel like it is a scapegoat version for including verbs in the URL. Maybe I need to read more on that.
+
+
+Thanks again.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</pre><br><br><br><br><br>
+-----------------------------------------------------------------------------------<br>
+Post ID:19724<br>
+Sender:mike amundsen &lt;mamund@...&gt;<br>
+Post Date/Time:2015-09-26 20:08:38<br>
+Subject:Fwd: An Open Letter<br>
+Message:<br><br>
+<pre>Thought I'd share this email from Mel Conway (remember Conway' Law?)
+regarding his current work.
+
+I find the general idea very compelling and would love to see others weigh
+in on this either on twitter (using his hashtag) or even here on the list.
+
+cheers.
+
+
+mamund
++1.859.757.1449
+skype: mca.amundsen
+http://amundsen.com/blog/
+http://twitter.com/mamund
+https://github.com/mamund
+http://linkedin.com/in/mamund
+
+---------- Forwarded message ----------
+From: Mel Conway &lt;conway.mel@...&gt;
+Date: Fri, Sep 18, 2015 at 12:19 PM
+Subject: An Open Letter
+To:
+
+
+To my friends, colleagues, and family:
+
+I’ve just tweeted a link to a new paper:
+“An Open Letter to the Tech Community: Humanize the Craft of Building
+Interactive Computer Applications”.
+I invite you to follow me on Twitter at @conways_law or
+http://twitter.com/conways_law .
+You can also find the paper at
+http://melconway.com/humanize-the-craft.pdf
+
+This five-page paper describes, in almost completely nontechnical terms,
+what I have learned during a half-century career of thinking mostly about
+one problem: simplifying the software-building process. It invites the tech
+community to think differently about applications so that application
+building can be taught in elementary schools. The paper proposes specific
+design principles for the new craft.
+
+You will read in the first paragraph:
+“Over the span of human history the understanding of three important
+technologies has migrated from the domains of priests to the domains of
+elementary school teachers: arithmetic, writing, and the calendar. Now
+software technology must join this migration.”
+
+Then:
+“My search for a new approach has led me to thinking about building
+applications, not from what is particular to software, but from what is
+universal to humanity.”
+
+Let’s have a conversation at #HumanizeTheCraft .
+
+My best,
+
+Mel
+-- 
+Check out Conway's Law &lt;https://www.google.com/search?q=conway%27s+law&gt;
+Resume: http://melconway.com/resume.pdf
+New mobile number: 978-712-4925
+</pre><br><br><br><br><br>
+-----------------------------------------------------------------------------------<br>
+Post ID:19725<br>
+Sender:Eric Newcomer &lt;e_newcomer@...&gt;<br>
+Post Date/Time:2015-09-26 20:34:04<br>
+Subject:Re: [rest-discuss] Fwd: An Open Letter<br>
+Message:<br><br>
+<pre>
+I agree with the goal to adapt computers to humans. Today it's the reverse. This seems at the heart of the paper, and a good point. 
+
+
+It's not as if we haven't tried - lots of GUI based 4GLs and code generators have been developed. But they haven't really succeeded. 
+
+
+Perhaps the iPad is the right metaphor for human users. But it doesn't eliminate or replace coding. Far from it. 
+
+
+Ultimately I'm unsure the paper frames the question correctly. I would draw more of a distinction between manufacturing and using computers than suggesting we can do a better job of abstracting code. That has not and may not work as long as computers themselves are not changed - meaning as designers and developers we still need to know how the code will execute and impact HW resources. 
+
+
+Making computers more usable as a result, however, seems to hold significant promise.
+
+
+Thanks for posting.
+
+
+Best,
+
+
+Eric
+
+
+Sent from Yahoo Mail on Android
+
+From:"mike amundsen mamund@... [rest-discuss]" &lt;rest-discuss-noreply@yahoogroups.com&gt;
+Date:Sat, Sep 26, 2015 at 4:09 PM
+Subject:[rest-discuss] Fwd: An Open Letter
+
+  
+
+Thought I'd share this email from Mel Conway (remember Conway' Law?) regarding his current work.
+
+
+I find the general idea very compelling and would love to see others weigh in on this either on twitter (using his hashtag) or even here on the list.
+
+
+cheers.
+
+
+
+mamund
+
++1.859.757.1449
+skype: mca.amundsen
+http://amundsen.com/blog/
+http://twitter.com/mamund
+https://github.com/mamund
+http://linkedin.com/in/mamund
+
+
+---------- Forwarded message ----------
+From: Mel Conway &lt;conway.mel@...&gt;
+Date: Fri, Sep 18, 2015 at 12:19 PM
+Subject: An Open Letter
+To: 
+
+
+To my friends, colleagues, and family:
+
+
+I’ve just tweeted a link to a new paper:
+
+“An Open Letter to the Tech Community: Humanize the Craft of Building Interactive Computer Applications”. 
+
+I invite you to follow me on Twitter at @conways_law or http://twitter.com/conways_law . 
+
+You can also find the paper at 
+
+http://melconway.com/humanize-the-craft.pdf
+
+
+This five-page paper describes, in almost completely nontechnical terms, what I have learned during a half-century career of thinking mostly about one problem: simplifying the software-building process. It invites the tech community to think differently about applications so that application building can be taught in elementary schools. The paper proposes specific design principles for the new craft. 
+
+
+You will read in the first paragraph:
+
+“Over the span of human history the understanding of three important technologies has migrated from the domains of priests to the domains of elementary school teachers: arithmetic, writing, and the calendar. Now software technology must join this migration.”
+
+
+Then:
+
+“My search for a new approach has led me to thinking about building applications, not from what is particular to software, but from what is universal to humanity.” 
+
+
+Let’s have a conversation at #HumanizeTheCraft . 
+
+
+My best,
+
+
+Mel
+
+-- 
+
+Check out Conway's Law
+
+Resume: http://melconway.com/resume.pdf
+
+New mobile number: 978-712-4925
+
+
+
+
+</pre><br><br><br><br><br>
+-----------------------------------------------------------------------------------<br>
+Post ID:19726<br>
+Sender:mike amundsen &lt;mamund@...&gt;<br>
+Post Date/Time:2015-09-26 20:50:15<br>
+Subject:Re: [rest-discuss] Fwd: An Open Letter<br>
+Message:<br><br>
+<pre>&lt;snip&gt;
+ designers and developers we still need to know how the code will execute
+and impact HW resources.
+&lt;/snip&gt;
+
+right -- totally agree.
+
+i've read some of Conway's other material on this subject and i think this
+quote is aimed at your point:
+
+"The developer’s productivity is best served by a tool set whose behavior
+throughout the development cycle is strictly consistent with the principle
+that the program being executed is available without delay after every
+change and is identical to the source program entered by the developer."[1]
+
+he's posted a preso w/ some additional details, too[2]
+
+there certainly is a challenge to creating this "instant feedback"
+experience -- esp. for distributed (Fielding calls them Networked) systems.
+and i think that's where the real value will be found.
+
+
+
+[1] http://www.melconway.com/Home/Inventor.html
+[2] http://melconway.com/Home/pdf/humanize.pdf
+
+
+
+
+
+mamund
++1.859.757.1449
+skype: mca.amundsen
+http://amundsen.com/blog/
+http://twitter.com/mamund
+https://github.com/mamund
+http://linkedin.com/in/mamund
+
+On Sat, Sep 26, 2015 at 4:34 PM, Eric Newcomer &lt;e_newcomer@yahoo.com&gt; wrote:
+
+&gt;
+&gt; I agree with the goal to adapt computers to humans. Today it's the
+&gt; reverse. This seems at the heart of the paper, and a good point.
+&gt;
+&gt; It's not as if we haven't tried - lots of GUI based 4GLs and code
+&gt; generators have been developed. But they haven't really succeeded.
+&gt;
+&gt; Perhaps the iPad is the right metaphor for human users. But it doesn't
+&gt; eliminate or replace coding. Far from it.
+&gt;
+&gt; Ultimately I'm unsure the paper frames the question correctly. I would
+&gt; draw more of a distinction between manufacturing and using computers than
+&gt; suggesting we can do a better job of abstracting code. That has not and may
+&gt; not work as long as computers themselves are not changed - meaning as
+&gt; designers and developers we still need to know how the code will execute
+&gt; and impact HW resources.
+&gt;
+&gt; Making computers more usable as a result, however, seems to hold
+&gt; significant promise.
+&gt;
+&gt; Thanks for posting.
+&gt;
+&gt; Best,
+&gt;
+&gt; Eric
+&gt;
+&gt; Sent from Yahoo Mail on Android
+&gt; &lt;https://overview.mail.yahoo.com/mobile/?.src=Android&gt;
+&gt; ------------------------------
+&gt; *From*:"mike amundsen mamund@... [rest-discuss]" &lt;
+&gt; rest-discuss-noreply@yahoogroups.com&gt;
+&gt; *Date*:Sat, Sep 26, 2015 at 4:09 PM
+&gt; *Subject*:[rest-discuss] Fwd: An Open Letter
+&gt;
+&gt;
+&gt;
+&gt; Thought I'd share this email from Mel Conway (remember Conway' Law?)
+&gt; regarding his current work.
+&gt;
+&gt; I find the general idea very compelling and would love to see others weigh
+&gt; in on this either on twitter (using his hashtag) or even here on the list.
+&gt;
+&gt; cheers.
+&gt;
+&gt;
+&gt; mamund
+&gt; +1.859.757.1449
+&gt; skype: mca.amundsen
+&gt; http://amundsen.com/blog/
+&gt; http://twitter.com/mamund
+&gt; https://github.com/mamund
+&gt; http://linkedin.com/in/mamund
+&gt;
+&gt; ---------- Forwarded message ----------
+&gt; From: Mel Conway &lt;conway.mel@...&gt;
+&gt; Date: Fri, Sep 18, 2015 at 12:19 PM
+&gt; Subject: An Open Letter
+&gt; To:
+&gt;
+&gt;
+&gt; To my friends, colleagues, and family:
+&gt;
+&gt; I’ve just tweeted a link to a new paper:
+&gt; “An Open Letter to the Tech Community: Humanize the Craft of Building
+&gt; Interactive Computer Applications”.
+&gt; I invite you to follow me on Twitter at @conways_law or
+&gt; http://twitter.com/conways_law .
+&gt; You can also find the paper at
+&gt; http://melconway.com/humanize-the-craft.pdf
+&gt;
+&gt; This five-page paper describes, in almost completely nontechnical terms,
+&gt; what I have learned during a half-century career of thinking mostly about
+&gt; one problem: simplifying the software-building process. It invites the tech
+&gt; community to think differently about applications so that application
+&gt; building can be taught in elementary schools. The paper proposes specific
+&gt; design principles for the new craft.
+&gt;
+&gt; You will read in the first paragraph:
+&gt; “Over the span of human history the understanding of three important
+&gt; technologies has migrated from the domains of priests to the domains of
+&gt; elementary school teachers: arithmetic, writing, and the calendar. Now
+&gt; software technology must join this migration.”
+&gt;
+&gt; Then:
+&gt; “My search for a new approach has led me to thinking about building
+&gt; applications, not from what is particular to software, but from what is
+&gt; universal to humanity.”
+&gt;
+&gt; Let’s have a conversation at #HumanizeTheCraft .
+&gt;
+&gt; My best,
+&gt;
+&gt; Mel
+&gt; --
+&gt; Check out Conway's Law &lt;https://www.google.com/search?q=conway%27s+law&gt;
+&gt; Resume: http://melconway.com/resume.pdf
+&gt; New mobile number: 978-712-4925
+&gt;
+&gt; 
+&gt;
+</pre><br><br><br><br><br>
+-----------------------------------------------------------------------------------<br>
+Post ID:19727<br>
+Sender:Keith P Hassen &lt;keith.hassen@...&gt;<br>
+Post Date/Time:2015-09-26 21:29:23<br>
+Subject:Re: [rest-discuss] Fwd: An Open Letter<br>
+Message:<br><br>
+<pre>Thanks for sharing.  This reminds me of the infamous "Future of
+Programming" talk given by Bret Victor:
+https://www.youtube.com/watch?v=8pTEmbeENF4
+
+K
+
+
+On Sat, Sep 26, 2015 at 4:50 PM mike amundsen mamund@...
+[rest-discuss] &lt;rest-discuss-noreply@yahoogroups.com&gt; wrote:
+
+&gt;
+&gt;
+&gt; &lt;snip&gt;
+&gt;
+&gt;  designers and developers we still need to know how the code will execute
+&gt; and impact HW resources.
+&gt;
+&gt; &lt;/snip&gt;
+&gt;
+&gt; right -- totally agree.
+&gt;
+&gt; i've read some of Conway's other material on this subject and i think this
+&gt; quote is aimed at your point:
+&gt;
+&gt; "The developer’s productivity is best served by a tool set whose behavior
+&gt; throughout the development cycle is strictly consistent with the principle
+&gt; that the program being executed is available without delay after every
+&gt; change and is identical to the source program entered by the developer."[1]
+&gt;
+&gt; he's posted a preso w/ some additional details, too[2]
+&gt;
+&gt; there certainly is a challenge to creating this "instant feedback"
+&gt; experience -- esp. for distributed (Fielding calls them Networked) systems.
+&gt; and i think that's where the real value will be found.
+&gt;
+&gt;
+&gt;
+&gt; [1] http://www.melconway.com/Home/Inventor.html
+&gt; [2] http://melconway.com/Home/pdf/humanize.pdf
+&gt;
+&gt;
+&gt;
+&gt;
+&gt;
+&gt; mamund
+&gt; +1.859.757.1449
+&gt; skype: mca.amundsen
+&gt; http://amundsen.com/blog/
+&gt; http://twitter.com/mamund
+&gt; https://github.com/mamund
+&gt; http://linkedin.com/in/mamund
+&gt;
+&gt; On Sat, Sep 26, 2015 at 4:34 PM, Eric Newcomer &lt;e_newcomer@...&gt;
+&gt; wrote:
+&gt;
+&gt;&gt;
+&gt;&gt; I agree with the goal to adapt computers to humans. Today it's the
+&gt;&gt; reverse. This seems at the heart of the paper, and a good point.
+&gt;&gt;
+&gt;&gt; It's not as if we haven't tried - lots of GUI based 4GLs and code
+&gt;&gt; generators have been developed. But they haven't really succeeded.
+&gt;&gt;
+&gt;&gt; Perhaps the iPad is the right metaphor for human users. But it doesn't
+&gt;&gt; eliminate or replace coding. Far from it.
+&gt;&gt;
+&gt;&gt; Ultimately I'm unsure the paper frames the question correctly. I would
+&gt;&gt; draw more of a distinction between manufacturing and using computers than
+&gt;&gt; suggesting we can do a better job of abstracting code. That has not and may
+&gt;&gt; not work as long as computers themselves are not changed - meaning as
+&gt;&gt; designers and developers we still need to know how the code will execute
+&gt;&gt; and impact HW resources.
+&gt;&gt;
+&gt;&gt; Making computers more usable as a result, however, seems to hold
+&gt;&gt; significant promise.
+&gt;&gt;
+&gt;&gt; Thanks for posting.
+&gt;&gt;
+&gt;&gt; Best,
+&gt;&gt;
+&gt;&gt; Eric
+&gt;&gt;
+&gt;&gt; Sent from Yahoo Mail on Android
+&gt;&gt; &lt;https://overview.mail.yahoo.com/mobile/?.src=Android&gt;
+&gt;&gt; ------------------------------
+&gt;&gt; *From*:"mike amundsen mamund@... [rest-discuss]" &lt;
+&gt;&gt; rest-discuss-noreply@yahoogroups.com&gt;
+&gt;&gt; *Date*:Sat, Sep 26, 2015 at 4:09 PM
+&gt;&gt; *Subject*:[rest-discuss] Fwd: An Open Letter
+&gt;&gt;
+&gt;&gt;
+&gt;&gt;
+&gt;&gt; Thought I'd share this email from Mel Conway (remember Conway' Law?)
+&gt;&gt; regarding his current work.
+&gt;&gt;
+&gt;&gt; I find the general idea very compelling and would love to see others
+&gt;&gt; weigh in on this either on twitter (using his hashtag) or even here on the
+&gt;&gt; list.
+&gt;&gt;
+&gt;&gt; cheers.
+&gt;&gt;
+&gt;&gt;
+&gt;&gt; mamund
+&gt;&gt; +1.859.757.1449
+&gt;&gt; skype: mca.amundsen
+&gt;&gt; http://amundsen.com/blog/
+&gt;&gt; http://twitter.com/mamund
+&gt;&gt; https://github.com/mamund
+&gt;&gt; http://linkedin.com/in/mamund
+&gt;&gt;
+&gt;&gt; ---------- Forwarded message ----------
+&gt;&gt; From: Mel Conway &lt;conway.mel@...&gt;
+&gt;&gt; Date: Fri, Sep 18, 2015 at 12:19 PM
+&gt;&gt; Subject: An Open Letter
+&gt;&gt; To:
+&gt;&gt;
+&gt;&gt;
+&gt;&gt; To my friends, colleagues, and family:
+&gt;&gt;
+&gt;&gt; I’ve just tweeted a link to a new paper:
+&gt;&gt; “An Open Letter to the Tech Community: Humanize the Craft of Building
+&gt;&gt; Interactive Computer Applications”.
+&gt;&gt; I invite you to follow me on Twitter at @conways_law or
+&gt;&gt; http://twitter.com/conways_law .
+&gt;&gt; You can also find the paper at
+&gt;&gt; http://melconway.com/humanize-the-craft.pdf
+&gt;&gt;
+&gt;&gt; This five-page paper describes, in almost completely nontechnical terms,
+&gt;&gt; what I have learned during a half-century career of thinking mostly about
+&gt;&gt; one problem: simplifying the software-building process. It invites the tech
+&gt;&gt; community to think differently about applications so that application
+&gt;&gt; building can be taught in elementary schools. The paper proposes specific
+&gt;&gt; design principles for the new craft.
+&gt;&gt;
+&gt;&gt; You will read in the first paragraph:
+&gt;&gt; “Over the span of human history the understanding of three important
+&gt;&gt; technologies has migrated from the domains of priests to the domains of
+&gt;&gt; elementary school teachers: arithmetic, writing, and the calendar. Now
+&gt;&gt; software technology must join this migration.”
+&gt;&gt;
+&gt;&gt; Then:
+&gt;&gt; “My search for a new approach has led me to thinking about building
+&gt;&gt; applications, not from what is particular to software, but from what is
+&gt;&gt; universal to humanity.”
+&gt;&gt;
+&gt;&gt; Let’s have a conversation at #HumanizeTheCraft .
+&gt;&gt;
+&gt;&gt; My best,
+&gt;&gt;
+&gt;&gt; Mel
+&gt;&gt; --
+&gt;&gt; Check out Conway's Law &lt;https://www.google.com/search?q=conway%27s+law&gt;
+&gt;&gt; Resume: http://melconway.com/resume.pdf
+&gt;&gt; New mobile number: 978-712-4925
+&gt;&gt;
+&gt;&gt;
+&gt; 
+&gt;
+</pre><br><br><br><br><br>
+-----------------------------------------------------------------------------------<br>
+Post ID:19728<br>
+Sender:Eric Newcomer &lt;e_newcomer@...&gt;<br>
+Post Date/Time:2015-09-26 21:37:05<br>
+Subject:Re: [rest-discuss] Fwd: An Open Letter<br>
+Message:<br><br>
+<pre>
+Yes, but unfortunately the article also propagates the mythology of the developer as craftsman, and assumes developers need better tools to realize their designs. It's a mistake to conflate developer and designer roles. That's why the iPod/iPhone/iPad phenomenon is so instructive. The industry will be better served through advancing scientific and industrial techniques, such as those adopted in Lean and Agile methodologies. 
+
+
+
+
+Best,
+
+
+Eric
+
+Sent from Yahoo Mail on Android
+
+From:"mike amundsen mamund@... [rest-discuss]" &lt;rest-discuss-noreply@yahoogroups.com&gt;
+Date:Sat, Sep 26, 2015 at 4:50 PM
+Subject:Re: [rest-discuss] Fwd: An Open Letter
+
+  
+
+&lt;snip&gt;
+
+ designers and developers we still need to know how the code will execute and impact HW resources. 
+
+&lt;/snip&gt;
+
+
+right -- totally agree. 
+
+
+i've read some of Conway's other material on this subject and i think this quote is aimed at your point:
+
+
+"The developer’s productivity is best served by a tool set whose behavior throughout the development cycle is strictly consistent with the principle that the program being executed is available without delay after every change and is identical to the source program entered by the developer."[1]
+
+
+he's posted a preso w/ some additional details, too[2]
+
+
+there certainly is a challenge to creating this "instant feedback" experience -- esp. for distributed (Fielding calls them Networked) systems. and i think that's where the real value will be found.
+
+
+
+
+[1] http://www.melconway.com/Home/Inventor.html
+
+[2] http://melconway.com/Home/pdf/humanize.pdf
+
+
+
+
+
+
+mamund
+
++1.859.757.1449
+skype: mca.amundsen
+http://amundsen.com/blog/
+http://twitter.com/mamund
+https://github.com/mamund
+http://linkedin.com/in/mamund
+
+
+On Sat, Sep 26, 2015 at 4:34 PM, Eric Newcomer &lt;e_newcomer@...&gt; wrote:
+
+
+I agree with the goal to adapt computers to humans. Today it's the reverse. This seems at the heart of the paper, and a good point. 
+
+
+It's not as if we haven't tried - lots of GUI based 4GLs and code generators have been developed. But they haven't really succeeded. 
+
+
+Perhaps the iPad is the right metaphor for human users. But it doesn't eliminate or replace coding. Far from it. 
+
+
+Ultimately I'm unsure the paper frames the question correctly. I would draw more of a distinction between manufacturing and using computers than suggesting we can do a better job of abstracting code. That has not and may not work as long as computers themselves are not changed - meaning as designers and developers we still need to know how the code will execute and impact HW resources. 
+
+
+Making computers more usable as a result, however, seems to hold significant promise.
+
+
+Thanks for posting.
+
+
+Best,
+
+
+Eric
+
+
+Sent from Yahoo Mail on Android
+
+From:"mike amundsen mamund@... [rest-discuss]" &lt;rest-discuss-noreply@yahoogroups.com&gt;
+Date:Sat, Sep 26, 2015 at 4:09 PM
+Subject:[rest-discuss] Fwd: An Open Letter
+
+  
+
+Thought I'd share this email from Mel Conway (remember Conway' Law?) regarding his current work.
+
+
+I find the general idea very compelling and would love to see others weigh in on this either on twitter (using his hashtag) or even here on the list.
+
+
+cheers.
+
+
+
+mamund
+
++1.859.757.1449
+skype: mca.amundsen
+http://amundsen.com/blog/
+http://twitter.com/mamund
+https://github.com/mamund
+http://linkedin.com/in/mamund
+
+
+---------- Forwarded message ----------
+From: Mel Conway &lt;conway.mel@...&gt;
+Date: Fri, Sep 18, 2015 at 12:19 PM
+Subject: An Open Letter
+To: 
+
+
+To my friends, colleagues, and family:
+
+
+I’ve just tweeted a link to a new paper:
+
+“An Open Letter to the Tech Community: Humanize the Craft of Building Interactive Computer Applications”. 
+
+I invite you to follow me on Twitter at @conways_law or http://twitter.com/conways_law . 
+
+You can also find the paper at 
+
+http://melconway.com/humanize-the-craft.pdf
+
+
+This five-page paper describes, in almost completely nontechnical terms, what I have learned during a half-century career of thinking mostly about one problem: simplifying the software-building process. It invites the tech community to think differently about applications so that application building can be taught in elementary schools. The paper proposes specific design principles for the new craft. 
+
+
+You will read in the first paragraph:
+
+“Over the span of human history the understanding of three important technologies has migrated from the domains of priests to the domains of elementary school teachers: arithmetic, writing, and the calendar. Now software technology must join this migration.”
+
+
+Then:
+
+“My search for a new approach has led me to thinking about building applications, not from what is particular to software, but from what is universal to humanity.” 
+
+
+Let’s have a conversation at #HumanizeTheCraft . 
+
+
+My best,
+
+
+Mel
+
+-- 
+
+Check out Conway's Law
+
+Resume: http://melconway.com/resume.pdf
+
+New mobile number: 978-712-4925
+
+
+
+
+
+</pre><br><br><br><br><br>
+-----------------------------------------------------------------------------------<br>
+Post ID:19729<br>
+Sender:Nicholas Shanks &lt;nickshanks@...&gt;<br>
+Post Date/Time:2015-11-11 15:38:10<br>
+Subject:Re: [rest-discuss] URI construction for REST API and use of verbs as resource?<br>
+Message:<br><br>
+<pre>On 17 June 2015 at 14:52, Jeff Lowe jlowe@... [rest-discuss] &lt;
+rest-discuss-noreply@yahoogroups.com&gt; wrote:
+
+
+&gt; I struggled with this for a while for a particular use case. My API needed
+&gt; to support the releasing of a customer-order to manufacturing. That
+&gt; suggested the URL ../orders/{id}/release.
+&gt;
+&gt;
+&gt;
+&gt; However I was entertaining that “verbs are RPC and resources are REST”,
+&gt; and “release” is obviously a verb. I entertained a few different approaches:
+&gt;
+&gt; 1.      PUT an order resource and set the “state” to released. That
+&gt; didn’t seem right because “release” is more of a business process than a
+&gt; property on a resource. In addition I’d be exposing internal state that
+&gt; shouldn’t necessarily be exposed.
+&gt;
+
+This is the correct way to do it. Any change of state is a 'process' even
+if all it takes is flipping a bit in a database.
+REST asks that you provide the *desired state* of a resource (URL) and the
+server is responsible for transitioning from whatever state it is in
+currently to the desired state.
+
+For example a simple issue in an issue-tracker has a field with four
+values: reported, open, and closed. The verbs "accept" and "re-open" would
+both be used in natural language to describe the transitions to "open" from
+the other two states, but a RESTful API would only allow the user to state
+the end value for the field, "open", and it would be up to the server to
+transition from either reported or closed as appropriate (or do nothing if
+it was already open).
+
+
+&gt; 2.      POST to an order-releaser resource. That’s more restful, but
+&gt; seems artificial.
+&gt;
+
+This is not RESTful, it's RPC.
+
+-- 
+Nicholas.
+</pre><br><br><br><br><br>
+-----------------------------------------------------------------------------------<br>
+Post ID:19730<br>
+Sender:Jeff Lowe &lt;jlowe@...&gt;<br>
+Post Date/Time:2015-12-22 19:34:21<br>
+Subject:RE: [rest-discuss] URI construction for REST API and use of verbs as resource?<br>
+Message:<br><br>
+<pre>&gt;&gt;&gt;   PUT an order resource and set the “state” to released.
+&gt;&gt; This is the correct way to do it
+
+It may be in some cases, but state-transitions may also be modeled as first-class resources.
+
+For example if my API needs to support changing an address, one approach may be to PUT an Address representation, thereby updating an existing Address resource.
+
+However a better approach (depending on the situation) may be to POST a ChangeOfAddress representation. This resource can hold additional contextual information, e.g. who requested the change, when it was changed, validation info, etc.
+
+So in my case I would POST a ReleaseRequest representation to ../orders/{id}/release-requests. A successful processing of that request would internally update the Order.Status to released, rather than changing Order.Status directly via a PUT.
+
+See: https://www.thoughtworks.com/insights/blog/rest-api-design-resource-modeling
+
+-Jeff
+
+
+From: nickshanks@gmail.com [mailto:nickshanks@gmail.com] On Behalf Of Nicholas Shanks
+Sent: Wednesday, November 11, 2015 10:38 AM
+To: Jeff Lowe
+Cc: rest-discuss
+Subject: Re: [rest-discuss] URI construction for REST API and use of verbs as resource?
+
+On 17 June 2015 at 14:52, Jeff Lowe jlowe@vistaprint.com&lt;mailto:jlowe@vistaprint.com&gt; [rest-discuss] &lt;rest-discuss-noreply@yahoogroups.com&lt;mailto:rest-discuss-noreply@yahoogroups.com&gt;&gt; wrote:
+
+I struggled with this for a while for a particular use case. My API needed to support the releasing of a customer-order to manufacturing. That suggested the URL ../orders/{id}/release.
+
+However I was entertaining that “verbs are RPC and resources are REST”, and “release” is obviously a verb. I entertained a few different approaches:
+
+1.      PUT an order resource and set the “state” to released. That didn’t seem right because “release” is more of a business process than a property on a resource. In addition I’d be exposing internal state that shouldn’t necessarily be exposed.
+
+This is the correct way to do it. Any change of state is a 'process' even if all it takes is flipping a bit in a database.
+REST asks that you provide the *desired state* of a resource (URL) and the server is responsible for transitioning from whatever state it is in currently to the desired state.
+
+For example a simple issue in an issue-tracker has a field with four values: reported, open, and closed. The verbs "accept" and "re-open" would both be used in natural language to describe the transitions to "open" from the other two states, but a RESTful API would only allow the user to state the end value for the field, "open", and it would be up to the server to transition from either reported or closed as appropriate (or do nothing if it was already open).
+
+
+2.      POST to an order-releaser resource. That’s more restful, but seems artificial.
+
+This is not RESTful, it's RPC.
+
+--
+Nicholas.
+</pre><br><br><br><br><br>
+-----------------------------------------------------------------------------------<br>
+Post ID:19731<br>
+Sender:Kevin &lt;myemailiskevin@...&gt;<br>
+Post Date/Time:2015-12-23 10:42:36<br>
+Subject:Re: URI construction for REST API and use of verbs as resource?<br>
+Message:<br><br>
+<pre>Not a fan of using http verbs as resources. Algorithms are fine as
+resources per Roy. I would post to algorithms.
+
+
+I did ecommerce api and fell in love with PATCH for changing resources
+state.
+</pre><br><br><br><br><br>
+-----------------------------------------------------------------------------------<br>
+Post ID:19732<br>
+Sender:hl Wang &lt;tingsi@...&gt;<br>
+Post Date/Time:2015-12-26 03:11:57<br>
+Subject:Re: [rest-discuss] URI construction for REST API and use of ver bs as resource?<br>
+Message:<br><br>
+<pre>
+RESTful   means verbs should be Orthogonal to resources.
+
+and verbs can be defined as u need,  it could be any regular action beside post,put,patch,delete,….
+
+
+
+
+so if u think a “release” is more perffect that any other way. u could define a verb named ‘release’.
+
+
+
+
+the only cons is that ‘release’ is not a standard http verb, u may confuse some ajx script; but totally good if used in a  customed client, eg: app。
+
+
+
+
+u can also chose another fix-field in http head,or in post/put content, to define verb. just not full http verbs based, but full compatible with all client： app or web ajx.
+
+
+
+
+
+
+发自 Windows 邮件
+
+
+
+
+
+发件人: Jeff Lowe jlowe@vistaprint.com [rest-discuss]
+发送时间: ‎2015‎年‎12‎月‎23‎日, ‎星期三 ‎4‎:‎53
+收件人: rest-discuss@yahoogroups.com
+抄送: rest-discuss@yahoogroups.com
+
+
+
+
+  
+
+
+
+
+
+
+&gt;&gt;&gt;   PUT an order resource and set the “state” to released.
+
+&gt;&gt; This is the correct way to do it
+
+ 
+
+It may be in some cases, but state-transitions may also be modeled as first-class resources. 
+
+ 
+
+For example if my API needs to support changing an address, one approach may be to PUT an Address representation, thereby updating an existing Address resource. 
+
+ 
+
+However a better approach (depending on the situation) may be to POST a ChangeOfAddress representation. This resource can hold additional contextual information, e.g. who requested the change, when it was changed, validation info, etc.
+
+ 
+
+So in my case I would POST a ReleaseRequest representation to ../orders/{id}/release-requests. A successful processing of that request would internally update the Order.Status to released, rather than changing Order.Status directly via a PUT.
+
+ 
+
+See: https://www.thoughtworks.com/insights/blog/rest-api-design-resource-modeling
+
+ 
+
+-Jeff
+
+ 
+
+ 
+
+From: nickshanks@gmail.com [mailto:nickshanks@gmail.com] On Behalf Of Nicholas Shanks
+Sent: Wednesday, November 11, 2015 10:38 AM
+To: Jeff Lowe
+Cc: rest-discuss
+Subject: Re: [rest-discuss] URI construction for REST API and use of verbs as resource?
+
+ 
+
+
+On 17 June 2015 at 14:52, Jeff Lowe jlowe@vistaprint.com [rest-discuss] &lt;rest-discuss-noreply@yahoogroups.com&gt; wrote:
+
+
+
+
+ 
+
+
+
+
+
+
+
+I struggled with this for a while for a particular use case. My API needed to support the releasing of a customer-order to manufacturing. That suggested the URL ../orders/{id}/release.
+
+ 
+
+However I was entertaining that “verbs are RPC and resources are REST”, and “release” is obviously a verb. I entertained a few different approaches:
+
+1.      PUT an order resource and set the “state” to released. That didn’t seem right because “release” is more of a business process than a property on a resource. In addition I’d be exposing internal state that shouldn’t necessarily be exposed.
+
+
+ 
+
+
+This is the correct way to do it. Any change of state is a 'process' even if all it takes is flipping a bit in a database.
+
+
+REST asks that you provide the *desired state* of a resource (URL) and the server is responsible for transitioning from whatever state it is in currently to the desired state.
+
+
+ 
+
+
+For example a simple issue in an issue-tracker has a field with four values: reported, open, and closed. The verbs "accept" and "re-open" would both be used in natural language to describe the transitions to "open" from the other two states, but a RESTful API would only allow the user to state the end value for the field, "open", and it would be up to the server to transition from either reported or closed as appropriate (or do nothing if it was already open).
+
+
+ 
+
+
+
+
+
+
+
+2.      POST to an order-releaser resource. That’s more restful, but seems artificial.
+
+
+ 
+
+
+This is not RESTful, it's RPC.
+
+
+ 
+
+-- 
+
+
+Nicholas.
+
+
+</pre><br><br><br><br><br>

@@ -1,0 +1,150 @@
+<style>pre {white-space: pre-wrap;}</style>
+-----------------------------------------------------------------------------------<br>
+Post ID:19738<br>
+Sender:Osvaldo Pina &lt;osvaldo.pina@...&gt;<br>
+Post Date/Time:2017-01-13 13:01:15<br>
+Subject:Questions about hypermedia api design<br>
+Message:<br><br>
+<pre>Hi all,
+
+
+I would like to get some advice on how to improve the way we build our
+hypermedia apis.
+
+
+We currently use HAL as our base hypermedia format and all non safe
+interactions are done using bare json documents submitted through http
+posts. The link relations are simple identifiers which are not the proper
+way to do it.
+
+
+The problems that I can see are:
+By using non standard link relations clients that are not produced by us
+have no way to find the resources that the server provides.
+By using bare json documents the clients have no way to know the format of
+documents expected by the server making it harder for clients to be
+developed and to keep them compatible to server when has to change.
+
+
+I'm thinking about raising api "hateoas" level by stating that all non safe
+interactions have to be done throughout HAL forms. That way clients can
+inspect the forms and know if they are compatible with server. By doing
+this I think that will ease both client development and maintenance. But I
+still have the following doubts:
+
+
+1 - should we use HAL forms instead of uri templates? We currently use uri
+templates a lot but they don't have any built in mechanism to indicate
+format and validation.
+2 - when making the safe requests how can we give clients any way to check
+the format of these responses? Should we use json schema?
+
+
+To solve our link relation problem I was thinking about creating a
+specification for inline relations using urns. I have to further develop
+this idea but the basics are:
+
+
+the urns would be composed of a set of properties. I was thinking about, at
+least, three properties:
+ organization - A kind of hierarchical structure like a java package to
+capture hierarchical nature of organizations
+subject - The matter to which the operation is made to act
+operation - action that will be carried on.
+
+
+An example would be:
+urn:Ilr:organization=com.myorganization,subject=order,operation=create
+
+
+There would be 2 two kinds of inline relations: pointers and selectors.
+Pointers indicate resources that are directly involved in fulfilling the
+operation on the subject as stated in the urn. Selectors sets restrictions
+on links in the resource.
+For example:
+
+
+The
+pointer:urn:ilr:organization=com.myorganization,subject=order,action=create
+points to the resource you have to use in order to create a client order
+(in my case a hal form)
+
+
+The selector:urn:ilr:organization:com.mycompany.* points to a resource that
+contains all links to any sub organization of com.mycompany like
+com.mycompany.mydepartment and all its subjects and operations.
+
+
+This distinction will help on finding a resource in a decentralized
+environment where resources can be add and removed without centralized
+control.
+
+
+As I said this have to be refined but I would like to know if there is
+already something like this or even if this is a good idea.
+
+
+Any help will be very appreciated!
+
+
+Att,
+Osvaldo Pina.
+</pre><br><br><br><br><br>
+-----------------------------------------------------------------------------------<br>
+Post ID:19739<br>
+Sender:Judson Lester &lt;nyarly@...&gt;<br>
+Post Date/Time:2017-06-20 20:59:14<br>
+Subject:Canary fields<br>
+Message:<br><br>
+<pre>I've just had a problem with serialization of JSON in Go that seems like it
+would be a general problem. I don't know about the elegance of my solution
+or its generality but I doubt I'm the only one who came to it, and further
+than others must've come up with something similar.
+
+The context is this: Go permissively deserializes JSON into structs -
+attributes that don't correspond to a struct member are ignored silently,
+and struct members without a corresponding JSON attribute are left with a
+zero value. When the server is upgraded, if its versions of JSON resources
+get new attributes, the client ignores them (nbd), but when the client does
+a PUT with the intention of updating, it zeros out attributes of which it
+is unaware. The solution to this problem was not difficult (and involved an
+applicaiton of the concept of lenses in the Go context...).
+
+The problem is: if the server receives an PUT update, how does it know that
+the update is legitimate, or produced by a pre-lens client who may have
+elided important fields?
+
+My solution is that the server adds a JSON attribute on all resources whose
+name is the Etag of the resource, and whose value is (unconditionally)
+"canary." PUTs without this field intact are assumed not to know how to
+properly do updates and return a 4xx status.
+
+I dimly feel as if I'm reimplementing something I may have heard/read in
+passing, but I'm wondering if the technique is well known? Perhaps it is
+(or should be) deprecated - if so in favor of what?
+
+Judson
+</pre><br><br><br><br><br>
+-----------------------------------------------------------------------------------<br>
+Post ID:19740<br>
+Sender:Mike Amundsen &lt;mamund@...&gt;<br>
+Post Date/Time:2017-12-22 17:29:03<br>
+Subject:WS-REST Call for Papers...<br>
+Message:<br><br>
+<pre>WS-REST 2018 has announced the call for papers[1]
+Join us in sunny Lyon, France in April for a jam-packed one-day workshop on Web Services, REST, and Web APIs.
+This year we're running two tracks for submissions: Research and Industry.
+The Research track is accepting 3-6 page original papers eligible for publication in the conference proceedings.
+The Industry track only requires 500 word abstracts for review and selection. We're hoping this opens the potential speaker pool to a wide array of practitioners, authors, and anyone with real-world experience to share.
+
+Deadline for submissions is January 17th.
+
+Feel free to ping me if you have any questions.
+Cheers.
+[1] http://2018.ws-rest.org/CfP
+
+
+
+MCA
+Mike Amundsen 
+mamund@...</pre><br><br><br><br><br>
