@@ -1,0 +1,76 @@
+
+
+Archiving group 'rest-discuss', mode: update , on Sun Oct 20 05:43:30 2019
+Skipped message https://groups.yahoo.com/api/v1/groups/rest-discuss/messages/1239/raw due to Yahoo internal server error - you should retrieve message manually through the web interface.
+Failed after attempt 1 of 3 for url https://groups.yahoo.com/api/v1/groups/rest-discuss/messages/5052/raw (status: 404)
+Failed after attempt 1 of 3 for url https://groups.yahoo.com/api/v1/groups/rest-discuss/messages/5148/raw (status: 404)
+Skipped message https://groups.yahoo.com/api/v1/groups/rest-discuss/messages/8586/raw due to Yahoo internal server error - you should retrieve message manually through the web interface.
+Skipped message https://groups.yahoo.com/api/v1/groups/rest-discuss/messages/8844/raw due to Yahoo internal server error - you should retrieve message manually through the web interface.
+Failed after attempt 1 of 3 for url https://groups.yahoo.com/api/v1/groups/rest-discuss/messages/8916/raw (status: 404)
+Failed after attempt 1 of 3 for url https://groups.yahoo.com/api/v1/groups/rest-discuss/messages/8917/raw (status: 404)
+Skipped message https://groups.yahoo.com/api/v1/groups/rest-discuss/messages/8922/raw due to Yahoo internal server error - you should retrieve message manually through the web interface.
+Skipped message https://groups.yahoo.com/api/v1/groups/rest-discuss/messages/8924/raw due to Yahoo internal server error - you should retrieve message manually through the web interface.
+Failed after attempt 1 of 3 for url https://groups.yahoo.com/api/v1/groups/rest-discuss/messages/8927/raw (status: 404)
+Failed after attempt 1 of 3 for url https://groups.yahoo.com/api/v1/groups/rest-discuss/messages/8929/raw (status: 404)
+Failed after attempt 1 of 3 for url https://groups.yahoo.com/api/v1/groups/rest-discuss/messages/8932/raw (status: 404)
+Failed after attempt 1 of 3 for url https://groups.yahoo.com/api/v1/groups/rest-discuss/messages/8934/raw (status: 404)
+Failed after attempt 1 of 3 for url https://groups.yahoo.com/api/v1/groups/rest-discuss/messages/8947/raw (status: 404)
+Failed after attempt 1 of 3 for url https://groups.yahoo.com/api/v1/groups/rest-discuss/messages/8948/raw (status: 404)
+Skipped message https://groups.yahoo.com/api/v1/groups/rest-discuss/messages/9031/raw due to Yahoo internal server error - you should retrieve message manually through the web interface.
+Skipped message https://groups.yahoo.com/api/v1/groups/rest-discuss/messages/9117/raw due to Yahoo internal server error - you should retrieve message manually through the web interface.
+Skipped message https://groups.yahoo.com/api/v1/groups/rest-discuss/messages/9483/raw due to Yahoo internal server error - you should retrieve message manually through the web interface.
+Skipped message https://groups.yahoo.com/api/v1/groups/rest-discuss/messages/9605/raw due to Yahoo internal server error - you should retrieve message manually through the web interface.
+Skipped message https://groups.yahoo.com/api/v1/groups/rest-discuss/messages/9642/raw due to Yahoo internal server error - you should retrieve message manually through the web interface.
+Skipped message https://groups.yahoo.com/api/v1/groups/rest-discuss/messages/9845/raw due to Yahoo internal server error - you should retrieve message manually through the web interface.
+Skipped message https://groups.yahoo.com/api/v1/groups/rest-discuss/messages/9847/raw due to Yahoo internal server error - you should retrieve message manually through the web interface.
+Skipped message https://groups.yahoo.com/api/v1/groups/rest-discuss/messages/9848/raw due to Yahoo internal server error - you should retrieve message manually through the web interface.
+Skipped message https://groups.yahoo.com/api/v1/groups/rest-discuss/messages/9852/raw due to Yahoo internal server error - you should retrieve message manually through the web interface.
+Skipped message https://groups.yahoo.com/api/v1/groups/rest-discuss/messages/9857/raw due to Yahoo internal server error - you should retrieve message manually through the web interface.
+Skipped message https://groups.yahoo.com/api/v1/groups/rest-discuss/messages/9865/raw due to Yahoo internal server error - you should retrieve message manually through the web interface.
+Skipped message https://groups.yahoo.com/api/v1/groups/rest-discuss/messages/9881/raw due to Yahoo internal server error - you should retrieve message manually through the web interface.
+Skipped message https://groups.yahoo.com/api/v1/groups/rest-discuss/messages/9884/raw due to Yahoo internal server error - you should retrieve message manually through the web interface.
+Skipped message https://groups.yahoo.com/api/v1/groups/rest-discuss/messages/9889/raw due to Yahoo internal server error - you should retrieve message manually through the web interface.
+Skipped message https://groups.yahoo.com/api/v1/groups/rest-discuss/messages/9908/raw due to Yahoo internal server error - you should retrieve message manually through the web interface.
+Skipped message https://groups.yahoo.com/api/v1/groups/rest-discuss/messages/9913/raw due to Yahoo internal server error - you should retrieve message manually through the web interface.
+Skipped message https://groups.yahoo.com/api/v1/groups/rest-discuss/messages/9936/raw due to Yahoo internal server error - you should retrieve message manually through the web interface.
+Skipped message https://groups.yahoo.com/api/v1/groups/rest-discuss/messages/9969/raw due to Yahoo internal server error - you should retrieve message manually through the web interface.
+Skipped message https://groups.yahoo.com/api/v1/groups/rest-discuss/messages/9993/raw due to Yahoo internal server error - you should retrieve message manually through the web interface.
+Skipped message https://groups.yahoo.com/api/v1/groups/rest-discuss/messages/10030/raw due to Yahoo internal server error - you should retrieve message manually through the web interface.
+Skipped message https://groups.yahoo.com/api/v1/groups/rest-discuss/messages/10037/raw due to Yahoo internal server error - you should retrieve message manually through the web interface.
+Skipped message https://groups.yahoo.com/api/v1/groups/rest-discuss/messages/10040/raw due to Yahoo internal server error - you should retrieve message manually through the web interface.
+Skipped message https://groups.yahoo.com/api/v1/groups/rest-discuss/messages/10085/raw due to Yahoo internal server error - you should retrieve message manually through the web interface.
+Skipped message https://groups.yahoo.com/api/v1/groups/rest-discuss/messages/10114/raw due to Yahoo internal server error - you should retrieve message manually through the web interface.
+Skipped message https://groups.yahoo.com/api/v1/groups/rest-discuss/messages/10183/raw due to Yahoo internal server error - you should retrieve message manually through the web interface.
+Skipped message https://groups.yahoo.com/api/v1/groups/rest-discuss/messages/10189/raw due to Yahoo internal server error - you should retrieve message manually through the web interface.
+Skipped message https://groups.yahoo.com/api/v1/groups/rest-discuss/messages/10542/raw due to Yahoo internal server error - you should retrieve message manually through the web interface.
+Skipped message https://groups.yahoo.com/api/v1/groups/rest-discuss/messages/10575/raw due to Yahoo internal server error - you should retrieve message manually through the web interface.
+Skipped message https://groups.yahoo.com/api/v1/groups/rest-discuss/messages/10578/raw due to Yahoo internal server error - you should retrieve message manually through the web interface.
+Skipped message https://groups.yahoo.com/api/v1/groups/rest-discuss/messages/10608/raw due to Yahoo internal server error - you should retrieve message manually through the web interface.
+Skipped message https://groups.yahoo.com/api/v1/groups/rest-discuss/messages/10653/raw due to Yahoo internal server error - you should retrieve message manually through the web interface.
+Skipped message https://groups.yahoo.com/api/v1/groups/rest-discuss/messages/10750/raw due to Yahoo internal server error - you should retrieve message manually through the web interface.
+Skipped message https://groups.yahoo.com/api/v1/groups/rest-discuss/messages/10819/raw due to Yahoo internal server error - you should retrieve message manually through the web interface.
+Skipped message https://groups.yahoo.com/api/v1/groups/rest-discuss/messages/10822/raw due to Yahoo internal server error - you should retrieve message manually through the web interface.
+Skipped message https://groups.yahoo.com/api/v1/groups/rest-discuss/messages/10824/raw due to Yahoo internal server error - you should retrieve message manually through the web interface.
+Skipped message https://groups.yahoo.com/api/v1/groups/rest-discuss/messages/10827/raw due to Yahoo internal server error - you should retrieve message manually through the web interface.
+Skipped message https://groups.yahoo.com/api/v1/groups/rest-discuss/messages/10831/raw due to Yahoo internal server error - you should retrieve message manually through the web interface.
+Skipped message https://groups.yahoo.com/api/v1/groups/rest-discuss/messages/10839/raw due to Yahoo internal server error - you should retrieve message manually through the web interface.
+Skipped message https://groups.yahoo.com/api/v1/groups/rest-discuss/messages/10861/raw due to Yahoo internal server error - you should retrieve message manually through the web interface.
+Skipped message https://groups.yahoo.com/api/v1/groups/rest-discuss/messages/10872/raw due to Yahoo internal server error - you should retrieve message manually through the web interface.
+Skipped message https://groups.yahoo.com/api/v1/groups/rest-discuss/messages/10898/raw due to Yahoo internal server error - you should retrieve message manually through the web interface.
+Skipped message https://groups.yahoo.com/api/v1/groups/rest-discuss/messages/10947/raw due to Yahoo internal server error - you should retrieve message manually through the web interface.
+Failed after attempt 1 of 3 for url https://groups.yahoo.com/api/v1/groups/rest-discuss/messages/11694/raw (status: 404)
+Failed after attempt 1 of 3 for url https://groups.yahoo.com/api/v1/groups/rest-discuss/messages/11718/raw (status: 404)
+Skipped message https://groups.yahoo.com/api/v1/groups/rest-discuss/messages/12096/raw due to Yahoo internal server error - you should retrieve message manually through the web interface.
+Skipped message https://groups.yahoo.com/api/v1/groups/rest-discuss/messages/12129/raw due to Yahoo internal server error - you should retrieve message manually through the web interface.
+Failed after attempt 1 of 3 for url https://groups.yahoo.com/api/v1/groups/rest-discuss/messages/12226/raw (status: 404)
+Failed after attempt 1 of 3 for url https://groups.yahoo.com/api/v1/groups/rest-discuss/messages/12510/raw (status: 404)
+Skipped message https://groups.yahoo.com/api/v1/groups/rest-discuss/messages/12733/raw due to Yahoo internal server error - you should retrieve message manually through the web interface.
+Skipped message https://groups.yahoo.com/api/v1/groups/rest-discuss/messages/13255/raw due to Yahoo internal server error - you should retrieve message manually through the web interface.
+Skipped message https://groups.yahoo.com/api/v1/groups/rest-discuss/messages/13697/raw due to Yahoo internal server error - you should retrieve message manually through the web interface.
+Failed after attempt 1 of 3 for url https://groups.yahoo.com/api/v1/groups/rest-discuss/messages/14049/raw (status: 404)
+Failed after attempt 1 of 3 for url https://groups.yahoo.com/api/v1/groups/rest-discuss/messages/15354/raw (status: 404)
+Failed after attempt 1 of 3 for url https://groups.yahoo.com/api/v1/groups/rest-discuss/messages/16674/raw (status: 404)
+Failed after attempt 1 of 3 for url https://groups.yahoo.com/api/v1/groups/rest-discuss/messages/19015/raw (status: 404)
+Failed after attempt 1 of 3 for url https://groups.yahoo.com/api/v1/groups/rest-discuss/messages/19279/raw (status: 404)
+Failed after attempt 1 of 3 for url https://groups.yahoo.com/api/v1/groups/rest-discuss/messages/19638/raw (status: 404)
+Archive finished, archived 19669, time taken is 15480.572000741959 seconds
